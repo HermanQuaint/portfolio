@@ -323,23 +323,44 @@ input[type="radio"].visually-hidden {
     font-weight: 700;
 }
 
-.skills div,
-.portfolio div {
 .separator {
     height: 20px;
 }
 
 /* skills - start */
 
+.skill-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skill__label {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 12px 24px;
+    border-radius: 6px;
+    box-shadow: 0 0 0 1px rgb(226, 226, 226);
+    min-width: 96px;
+    text-align: center;
+}
+
+.skill__label-point {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+
 /* skills - end */
 
 /* portfolio - start */
 .portfolio__list {
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
     margin: 0 auto 24px auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
