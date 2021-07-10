@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Веб разработчик который хочет создавать что-то прекрасное">
+    <!--Cоц.сети-->
+    <meta property="og:title" content="Личный сайт Германа Сахно">
+    <meta property="og:description" content="Веб разработчик который хочет создавать что-то прекрасное">
+    <meta property="og:image" content="<%= BASE_URL %>/images-header.png">
+    <!--Cоц.сети-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Герман Сахно Web Developer</title>
+    <link rel="icon" href="src/icons/fav/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="src/icons/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/icons/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="src/icons/fav/favicon-16x16.png">
+    <link rel="manifest" href="src/icons/fav/site.webmanifest">
+    <link rel="mask-icon" href="src/icons/fav/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body class="page-body">
+<header class="page-header">
+    <nav class="nav container">
+        <div class="nav__logo">
+            <a class="nav__link nav__name" href="#home">Герман Сахно</a>
+        </div>
+        <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#skills">Мои навыки</a></li>
+            <li class="nav__item"><a class="nav__link" href="#portfolio">Портфолио</a></li>
+            <li class="nav__item--icon"><a class="nav__link" href="#skills"><img src="src/icons/book.svg" alt=""></a></li>
+            <li class="nav__item--icon"><a class="nav__link" href="#portfolio"><img src="src/icons/briefcase.svg" alt=""></a></li>
+        </ul>
+    </nav>
+</header>
+<main class="page-main">
+    <h1 class="visually-hidden">Личный сайт Германа Сахно</h1>
+    <section class="container home" id="home">
+        <img class="home__img" src="https://via.placeholder.com/310x350" alt="Фото Сахно Германа">
+        <h2 class="home__name">Герман Сахно</h2>
+        <h3 class="home__title">Junior Web Developer</h3>
+        <p class="home__description">
+            Веб разработчик который хочет создавать что-то прекрасное
+        </p>
+    </section>
+    <section class="container skills" id="skills">
+        <div></div>
+        <h2 class="skills__title">Мои навыки</h2>
+    </section>
+    <section class="container portfolio" id="portfolio">
+        <div></div>
+        <h2 class="portfolio__title">Портфолио</h2>
+        <ul class="portfolio__list">
+            <li class="portfolio__item"><a href="https://hungry-hermann-6cef01.netlify.app/">
+                <img class="portfolio__item__img" src="src/img/portfolio/596851488.jpeg"
+                     alt="Личный проект 'Nёrds' (HtmlAcademy)" width="310" height="350">
+                Личный проект "Nёrds" (HtmlAcademy)</a></li>
+            <li class="portfolio__item"><a href="https://task-bootstrap.netlify.app/">
+                <img class="portfolio__item__img" src="src/img/portfolio/597827633.jpeg"
+                     alt="Задание на Bootstra" width="310" height="350">
+            Задание на Bootstrap</a></li>
+            <li class="portfolio__item"><a href="https://eloquent-mayer-ff6e5b.netlify.app/">
+                <img class="portfolio__item__img" src="src/img/portfolio/600587141.jpeg"
+                     alt="Адаптивный лендинг 'Gravity'" width="310" height="350">
+            Адаптивный лендинг 'Gravity'</a></li>
+            <li class="portfolio__item"><a href="#">
+                <img class="portfolio__item__img" src="src/img/portfolio/600797836.jpeg"
+                     alt="" width="310" height="350">
+            Лендинг Дома под ключ</a></li>
+            <li class="portfolio__item"><a href="https://confident-ardinghelli-cf0ed3.netlify.app/">
+                <img class="portfolio__item__img" src="src/img/portfolio/617993289.jpeg"
+                     alt="Первый проект на стажировке в ОБУ 'ИТЦ'" width="310" height="350">
+            Первый проект на стажировке в ОБУ 'ИТЦ'</a></li>
+            <li class="portfolio__item"><a href="https://happy-ptolemy-e4acaa.netlify.app/">
+                <img class="portfolio__item__img" src="src/img/portfolio/618020408.png"
+                     alt="Второй проект на стажировке в ОБУ 'ИТЦ'" width="310" height="350">
+            Второй проект на стажировке в ОБУ 'ИТЦ'</a></li>
+            <li class="portfolio__item"><a href="https://pedantic-austin-a80f95.netlify.app/">
+                <img class="portfolio__item__img" src="src/img/portfolio/618022232.png"
+                     alt="Сайт онлайн школы" width="310" height="350">
+            Сайт онлайн школы</a></li>
+        </ul>
+    </section>
+</main>
+<footer class="page-footer">
+    <section class="container contacts" itemscope itemtype="https://schema.org/Person">
+        <h2 class="contacts__title">
+            <span itemprop="givenName">Герман</span>
+            <span>&#32;</span>
+            <span itemprop="familyName">Сахно</span>
+
+        </h2>
+        <p class="contacts__email">Email: <span itemprop="email">hello@german-sh.ru</span></p>
+    </section>
+    <section class="copyright">
+        <p class="copyright__text">© 2021 Герман Сахно</p>
+    </section>
+</footer>
+</body>
+</html>
