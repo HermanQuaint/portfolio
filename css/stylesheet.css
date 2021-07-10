@@ -325,6 +325,7 @@ input[type="radio"].visually-hidden {
 
 .skills div,
 .portfolio div {
+.separator {
     height: 20px;
 }
 
@@ -339,15 +340,35 @@ input[type="radio"].visually-hidden {
     flex-wrap: wrap;
     justify-content: space-around;
 
+    margin: 0 auto 24px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px 24px;
     list-style: none;
 }
 
-.portfolio__item a {
-    display: flex;
-    flex-direction: column;
-    width: 310px;
+.portfolio__item {
+    text-align: center;
+    border-radius: 6px;
+}
+
+.portfolio__item:hover .portfolio__item__img-wrapper {
+    transform: translateY(-36px);
+    box-shadow: 0 0 0 1px rgb(226, 226, 226), 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+}
+
+.portfolio__item__img-wrapper {
+    position: relative;
+    z-index: 1;
     height: 350px;
+    margin: 0;
+    border-radius: 6px;
+    box-shadow: 0 0 0 1px rgb(226, 226, 226), 0 0 0 0 rgba(0, 0, 0, 0);
+    background: rgb(255, 255, 255);
+
     overflow: hidden;
+
+    transition: transform 250ms ease-in-out, box-shadow 250ms ease-in-out;
 }
 
 .portfolio__item__img {
@@ -355,6 +376,13 @@ input[type="radio"].visually-hidden {
     height: 100%;
 
     object-fit: cover;
+}
+
+.portfolio__item-title {
+    position: relative;
+    margin: -24px 0 0 0;
+    padding: 0;
+    color: rgb(80, 80, 80);
 }
 
 /* portfolio - end */
