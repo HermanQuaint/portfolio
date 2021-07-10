@@ -327,6 +327,10 @@ input[type="radio"].visually-hidden {
     height: 20px;
 }
 
+.separator--big {
+    height: 80px;
+}
+
 /* skills - start */
 
 .skill-block {
