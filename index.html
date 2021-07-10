@@ -36,9 +36,13 @@
 </header>
 <main class="page-main">
     <h1 class="visually-hidden">Личный сайт Германа Сахно</h1>
-    <section class="container home" id="home">
+    <section class="container home" id="home" itemscope itemtype="https://schema.org/Person">
         <img class="home__img" src="https://via.placeholder.com/310x350" alt="Фото Сахно Германа">
-        <h2 class="home__name">Герман Сахно</h2>
+        <h2 class="home__name">
+            <span itemprop="givenName">Герман</span>
+            <span>&#32;</span>
+            <span itemprop="familyName">Сахно</span>
+        </h2>
         <h3 class="home__title">Junior Web Developer</h3>
         <p class="home__description">
             Веб разработчик который хочет создавать что-то прекрасное
@@ -141,18 +145,14 @@
     </section>
 </main>
 <footer class="page-footer">
-    <section class="container contacts" itemscope itemtype="https://schema.org/Person">
-        <h2 class="contacts__title">
-            <span itemprop="givenName">Герман</span>
-            <span>&#32;</span>
-            <span itemprop="familyName">Сахно</span>
-
-        </h2>
-        <p class="contacts__email">Email: <span itemprop="email">hello@german-sh.ru</span></p>
-    </section>
-    <section class="copyright">
-        <p class="copyright__text">© 2021 Герман Сахно</p>
-    </section>
+    <div class="container">
+        <section class="copyright">
+            <p class="copyright__text">© 2021 Герман Сахно</p>
+        </section>
+        <section class="contacts">
+            <p class="contacts__email">Email: <a href="mailto:hello@german-sh.ru" itemprop="email">hello@german-sh.ru</a></p>
+        </section>
+    </div>
 </footer>
 </body>
 </html>

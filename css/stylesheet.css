@@ -361,6 +361,7 @@ input[type="radio"].visually-hidden {
 
 /* portfolio - start */
 .portfolio__list {
+    padding: 0;
     margin: 0 auto 24px auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -413,25 +414,14 @@ input[type="radio"].visually-hidden {
 /* footer - start */
 .page-footer {
     border-top: 1px solid #e2e2e2;
-    background-color: hsla(0, 0%, 100%, .6);
+}
+.page-footer .container {
+    display: flex;
+    justify-content: space-between;
 }
 
-.contacts {
-    padding-top: 16px;
-    padding-bottom: 16px;
-}
-
-.contacts__title {
-    text-align: center;
-}
-
-.contacts__email {
-    text-align: center;
-}
-
-.copyright {
-    border-top: 1px solid #e2e2e2;
-    background-color: hsla(0, 0%, 100%, .6);
+.contacts__email a {
+    color: var(--text);
 }
 
 .copyright__text {
