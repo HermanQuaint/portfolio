@@ -387,6 +387,7 @@ input[type="radio"].visually-hidden {
     height: 100%;
 
     object-fit: cover;
+    object-position: left top;
 }
 
 .portfolio__item-title {
